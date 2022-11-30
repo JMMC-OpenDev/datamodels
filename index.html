@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml" data-template="templates:surround" data-template-with="templates/page.html" data-template-at="content">
+    <div class="row">
+        <div class="col-md-12">
+        <div class="alert alert-warning alert-dismissible fade in" role="alert"> <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button> Work In Progress. </div>
+        
+            <h1 data-template="config:app-title">Generated page</h1>
+            <div data-template="models:list"/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+        <h2>Mix of columns</h2>
+        <p>
+            <div data-template="models:mix"/>
+        </p>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+        $('.datatable').DataTable( {
+             "paging": false,
+             "scrollX":true,
+        });
+        $('#mixedtable').DataTable({
+            "pageLength": 50,
+            "order": [],
+            "scrollX":true,
+        });
+        
+        });
+    </script>
+</div>
